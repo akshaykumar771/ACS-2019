@@ -1,0 +1,56 @@
+﻿<Window x:Class="single_2.W_compareList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:single_2"
+        mc:Ignorable="d"
+        Title="W_compareList" Height="450" Width="800">
+    <Grid>
+        <DataGrid Name="Grd_cmpTable" HorizontalAlignment="Left" Height="399" Margin="138,50,0,-30" VerticalAlignment="Top" Width="344" >
+            <!--<DataGrid.Columns>
+                <DataGridTextColumn Header="Model" MinWidth="10" />
+                <DataGridTextColumn Header="Make" MinWidth="10"/>
+                <DataGridTextColumn Binding="{Binding Price}" Header="Price" MinWidth="10"/>
+                <DataGridTextColumn Binding="{Binding Transmission}" Header="Transmission" MinWidth="10"/>
+                <DataGridTextColumn Binding="{Binding Year}" Header="Year" MinWidth="10"/>
+            </DataGrid.Columns>-->
+            <DataGrid.Resources>
+                <Style x:Key="DataGridBase" TargetType="Control">
+                    <Setter Property="LayoutTransform">
+                        <Setter.Value>
+                            <TransformGroup>
+                                <RotateTransform Angle="-90" />
+                                <ScaleTransform ScaleX="1" ScaleY="-1" />
+                            </TransformGroup>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="TextOptions.TextFormattingMode" Value="Display" />
+                </Style >
+                <Style TargetType="DataGridCell" BasedOn="{StaticResource DataGridBase}"/>
+                <Style TargetType="DataGridColumnHeader" BasedOn="{StaticResource DataGridBase}"/>
+                <Style TargetType="DataGridRowHeader" BasedOn="{StaticResource DataGridBase}"/>
+            </DataGrid.Resources>
+            <DataGrid.LayoutTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90" />
+                    <MatrixTransform Matrix="-1, 0, 0, 1, 0, 0" />
+                </TransformGroup>
+            </DataGrid.LayoutTransform>
+            <DataGrid.RowDetailsTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <StackPanel.LayoutTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90" />
+                                <MatrixTransform Matrix="-1, 0, 0, 1, 0, 0" />
+                            </TransformGroup>
+                        </StackPanel.LayoutTransform>
+                    </StackPanel>
+                </DataTemplate>
+            </DataGrid.RowDetailsTemplate>
+        </DataGrid>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="675,372,0,0" VerticalAlignment="Top" Width="94" Height="37" Click="Button_Back_Click"/>
+
+    </Grid>
+</Window>

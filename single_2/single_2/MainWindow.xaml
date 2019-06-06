@@ -1,0 +1,89 @@
+﻿<Window Background="AntiqueWhite" x:Class="single_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:single_2"
+        mc:Ignorable="d"
+        Title="Dashboard" Height="676.929" Width="800">
+    <Grid Margin="0,0,0,-7">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Margin="383,260,225,494"/>
+        <!--<StackPanel Margin="518,125,90,668">-->
+        <ComboBox Background="Aqua" x:Name="Cbx_Cb_Year" HorizontalAlignment="Left" VerticalAlignment="Top" Width="184" Height="43" SelectionChanged="Cbx_year_SelectionChanged" Margin="518,120,0,0">
+            <ComboBoxItem  FontSize="12" FontWeight="Bold" Content="2012"/>
+            <ComboBoxItem FontSize="12" FontWeight="Bold" Content="2014"/>
+            <ComboBoxItem FontSize="12" FontWeight="Bold" Content="2016"/>
+
+        </ComboBox>
+        <!--</StackPanel>-->
+        <!--<StackPanel Margin="143,218,465,575">-->
+        <ComboBox x:Name="Cbx_Cb_Price" HorizontalAlignment="Left" VerticalAlignment="Top" Width="184" Height="43"  SelectionChanged="Cbx_Cb_Price_SelectionChanged" Margin="143,218,0,0">
+            <ComboBoxItem  FontSize="12" FontWeight="Bold" Content="0 - 20000">
+
+            </ComboBoxItem>
+            <ComboBoxItem FontSize="12" FontWeight="Bold" Content="20000 - 40000">
+
+            </ComboBoxItem>
+            <ComboBoxItem FontSize="12" FontWeight="Bold" Content="40000 - 60000">
+
+            </ComboBoxItem>
+
+        </ComboBox>
+        <!--</StackPanel>-->
+        <!--<StackPanel Margin="518,218,90,575">-->
+        <ComboBox x:Name="Cbx_Cb_Fuel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="184" Height="41" SelectionChanged="Cbx_Cb_Fuel_SelectionChanged" Margin="518,218,0,0">
+            <ComboBoxItem  FontSize="12" FontWeight="Bold" Content="Petrol">
+
+            </ComboBoxItem>
+            <ComboBoxItem FontSize="12" FontWeight="Bold" Content="Diesel">
+
+            </ComboBoxItem>
+            <ComboBoxItem FontSize="12" FontWeight="Bold" Content="Electric">
+
+            </ComboBoxItem>
+
+        </ComboBox>
+        <!--</StackPanel>-->
+        <DataGrid Name="Grd_carInfo" HorizontalAlignment="Left" Height="217" Margin="143,347,0,0" VerticalAlignment="Top" Width="615" AutoGenerateColumns="False">>
+         <DataGrid.Columns>
+                <DataGridTextColumn Header="Manf." Binding="{Binding Manufacturer}" Width="*" IsReadOnly="True" />
+                <DataGridTextColumn Header="Model." Binding="{Binding Model}" Width="*" IsReadOnly="True" />
+                <DataGridTextColumn Header="Price." Binding="{Binding Price}" Width="*" IsReadOnly="True" />
+                <DataGridTextColumn Header="Year of Manf." Binding="{Binding Year}" Width="*" IsReadOnly="True" />
+                <DataGridTextColumn Header="Gear Type" Binding="{Binding Type}" Width="*" IsReadOnly="True" />
+                <DataGridTextColumn Header="Fuel" Binding="{Binding Fuel}" Width="*" IsReadOnly="True" />
+            </DataGrid.Columns>
+
+        </DataGrid>
+
+        <CheckBox Name="Chbx_manual" FontSize="18" Content="Manual" HorizontalAlignment="Left" Margin="143,295,0,0" VerticalAlignment="Top" IsChecked="false" Checked="Chbx_manual_Checked" Width="88"   />
+        <CheckBox Name="Chbx_auto" FontSize="18" Content="Automatic" HorizontalAlignment="Left" Margin="255,295,0,0" VerticalAlignment="Top" IsChecked="false" RenderTransformOrigin="0.534,0.212"/>
+        <Button Name="Btn_addCompare" Content="Add to compare" HorizontalAlignment="Left" Margin="518,587,0,0" VerticalAlignment="Top" Width="94" Click="Btn_addCompare_Click" Height="37" RenderTransformOrigin="1.474,4.748" />
+        <Button x:Name="Btn_gotoCompare" Content="Go to compare" HorizontalAlignment="Left" Margin="659,587,0,0" VerticalAlignment="Top" Width="94" Click="Btn_gotoCompare_Click" Height="37" RenderTransformOrigin="0.455,-0.162" />
+        <Button Content="Go to Sales" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Width="94" Height="37" Click="Button_Sales_Click"/>
+
+        <TextBlock HorizontalAlignment="Left" FontSize="18" Margin="518,86,0,0" TextWrapping="Wrap" Text="Year" VerticalAlignment="Top" Height="34" Width="184"/>
+        <TextBlock HorizontalAlignment="Left" FontSize="18" Margin="143,179,0,0" TextWrapping="Wrap" Text="Price" VerticalAlignment="Top" Height="34" Width="184"/>
+        <TextBlock HorizontalAlignment="Left" FontSize="18" Margin="518,179,0,0" TextWrapping="Wrap" Text="Fuel Type" VerticalAlignment="Top" Height="34" Width="184"/>
+        <Button FontSize="16" Content="Go" HorizontalAlignment="Left" Margin="518,281,0,0" VerticalAlignment="Top" Width="94" Click="Btn_Go_Click" Height="37" />
+        <TextBlock HorizontalAlignment="Left" Margin="143,10,0,0" TextWrapping="Wrap" Text="Car Details" FontSize="30" VerticalAlignment="Top" Height="50" Width="184"/>
+        <!--<ComboBox x:Name="Cbx_Cb" SelectionChanged="Cbx_SelectionChanged" HorizontalAlignment="Left" Width="185" Margin="142,137,0,656" >
+            <ComboBoxItem  FontSize="12" FontWeight="Bold" Content="BMW"/>
+            <ComboBoxItem FontSize="12" FontWeight="Bold" Content="Audi"/>
+            <ComboBoxItem FontSize="12" FontWeight="Bold" Content="Benz"/>
+
+        </ComboBox>-->
+        <TextBlock HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Manufacturer" FontSize="18" VerticalAlignment="Top" Height="34" Width="184" Margin="143,86,0,0"/>
+        <ComboBox x:Name="Cbx_Cb" SelectionChanged="Cbx_SelectionChanged" HorizontalAlignment="Left" Margin="143,125,0,0" VerticalAlignment="Top" Width="184" Height="42">
+            <ComboBoxItem  FontSize="12" FontWeight="Bold" Content="BMW"/>
+            <ComboBoxItem FontSize="12" FontWeight="Bold" Content="Audi"/>
+            <ComboBoxItem FontSize="12" FontWeight="Bold" Content="Benz"/>
+        </ComboBox>
+
+
+
+    </Grid>
+</Window>

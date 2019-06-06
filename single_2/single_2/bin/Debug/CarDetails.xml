@@ -1,0 +1,699 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Shini</Author>
+  <LastAuthor>Shini</LastAuthor>
+  <Created>2019-06-05T21:36:02Z</Created>
+  <LastSaved>2019-06-05T21:46:28Z</LastSaved>
+  <Company>HP</Company>
+  <Version>14.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>5970</WindowHeight>
+  <WindowWidth>14355</WindowWidth>
+  <WindowTopX>360</WindowTopX>
+  <WindowTopY>120</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m156771648">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s116">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s117">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#333333"
+    ss:Bold="1"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s118">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s120">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s121">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s122">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#24272C"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s123">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#343434"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s124">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#343434"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s125">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s127">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#343434"/>
+   <Interior ss:Color="#F8F8F8" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s128">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#343434"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s129">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#343434"/>
+   <Interior ss:Color="#F8F8F8" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s131">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s132">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s133">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#262626"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s134">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="10" ss:ExpandedRowCount="30" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s118" ss:DefaultRowHeight="15">
+   <Column ss:StyleID="s118" ss:AutoFitWidth="0" ss:Width="73.5"/>
+   <Column ss:StyleID="s118" ss:AutoFitWidth="0" ss:Width="71.25"/>
+   <Column ss:StyleID="s118" ss:AutoFitWidth="0" ss:Width="84.75"/>
+   <Column ss:StyleID="s118" ss:AutoFitWidth="0" ss:Width="69.75"/>
+   <Column ss:StyleID="s118" ss:AutoFitWidth="0" ss:Width="71.25" ss:Span="2"/>
+   <Column ss:Index="8" ss:StyleID="s118" ss:AutoFitWidth="0" ss:Width="66"/>
+   <Column ss:StyleID="s118" ss:AutoFitWidth="0" ss:Width="77.25"/>
+   <Column ss:StyleID="s118" ss:AutoFitWidth="0" ss:Width="66.75"/>
+   <Row ss:Height="48">
+    <Cell ss:StyleID="s116"><Data ss:Type="String">Manufacturer</Data></Cell>
+    <Cell ss:StyleID="s116"><Data ss:Type="String">Model</Data></Cell>
+    <Cell ss:StyleID="s116"><Data ss:Type="String">Mfg.Year</Data></Cell>
+    <Cell ss:StyleID="s116"><Data ss:Type="String">Price &#10;(in Euros)</Data></Cell>
+    <Cell ss:StyleID="s116"><Data ss:Type="String">Fuel Type</Data></Cell>
+    <Cell ss:StyleID="s116"><Data ss:Type="String">Transmission Type</Data></Cell>
+    <Cell ss:StyleID="s116"><Data ss:Type="String">Seats</Data></Cell>
+    <Cell ss:StyleID="s117"><Data ss:Type="String">Fuel Tank Capacity&#10;(in litres)</Data></Cell>
+    <Cell ss:StyleID="s116"><Data ss:Type="String">Horse Power</Data></Cell>
+    <Cell ss:StyleID="s116"><Data ss:Type="String">Car Type</Data></Cell>
+   </Row>
+   <Row ss:Height="16.5">
+    <Cell ss:MergeDown="5" ss:StyleID="m156771648"><Data ss:Type="String">AUDI</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Q3</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">2018</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">31969.54</Data></Cell>
+    <Cell ss:StyleID="s122"><Data ss:Type="String">Petrol</Data></Cell>
+    <Cell ss:StyleID="s123"><Data ss:Type="String">Automatic</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s124"><Data ss:Type="Number">64</Data></Cell>
+    <Cell ss:StyleID="s123"><Data ss:Type="String">200 hp</Data></Cell>
+    <Cell ss:StyleID="s125"><Data ss:Type="String">SUV</Data></Cell>
+   </Row>
+   <Row ss:Height="16.5">
+    <Cell ss:Index="2" ss:StyleID="s120"><Data ss:Type="String">S5</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">2014</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">46210.32</Data></Cell>
+    <Cell ss:StyleID="s122"><Data ss:Type="String">Petrol</Data></Cell>
+    <Cell ss:StyleID="s123"><Data ss:Type="String">Manual</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s124"><Data ss:Type="Number">61</Data></Cell>
+    <Cell ss:StyleID="s127"><Data ss:Type="String">333 hp</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Coupe</Data></Cell>
+   </Row>
+   <Row ss:Height="16.5">
+    <Cell ss:Index="2" ss:StyleID="s120"><Data ss:Type="String">RS5</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">2015</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">66822.789999999994</Data></Cell>
+    <Cell ss:StyleID="s122"><Data ss:Type="String">Petrol</Data></Cell>
+    <Cell ss:StyleID="s123"><Data ss:Type="String">Automatic</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s120"/>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">450 hp</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Cabriolet</Data></Cell>
+   </Row>
+   <Row ss:Height="16.5">
+    <Cell ss:Index="2" ss:StyleID="s120"><Data ss:Type="String">S3</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">2019</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">75221.649999999994</Data></Cell>
+    <Cell ss:StyleID="s122"><Data ss:Type="String">Petrol</Data></Cell>
+    <Cell ss:StyleID="s123"><Data ss:Type="String">Manual</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s120"/>
+    <Cell ss:StyleID="s128"><Data ss:Type="Number">320</Data></Cell>
+    <Cell ss:StyleID="s120"/>
+   </Row>
+   <Row ss:Height="16.5">
+    <Cell ss:Index="2" ss:StyleID="s120"><Data ss:Type="String">A4</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">2017</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">28680</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Diesel</Data></Cell>
+    <Cell ss:StyleID="s123"><Data ss:Type="String">Automatic</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">63</Data></Cell>
+    <Cell ss:StyleID="s129"><Data ss:Type="String">190 hp</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Sedan</Data></Cell>
+   </Row>
+   <Row ss:Height="16.5">
+    <Cell ss:Index="2" ss:StyleID="s131"/>
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s120"/>
+    <Cell ss:StyleID="s123"/>
+    <Cell ss:StyleID="s120"/>
+    <Cell ss:StyleID="s120"/>
+    <Cell ss:StyleID="s120"/>
+    <Cell ss:StyleID="s120"/>
+   </Row>
+   <Row ss:Height="32.25">
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Mercedes Benz</Data></Cell>
+    <Cell ss:StyleID="s133"><Data ss:Type="String">A-Class 200d</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">2019</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">26796</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Diesel</Data></Cell>
+    <Cell ss:StyleID="s123"><Data ss:Type="String">Automatic</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">50</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">188hp</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Sedan</Data></Cell>
+   </Row>
+   <Row ss:Height="16.5">
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">B-Class 250e</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">2017</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">327160</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Electric</Data></Cell>
+    <Cell ss:StyleID="s123"><Data ss:Type="String">Automatic</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">NA</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">177hp</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Hatchback</Data></Cell>
+   </Row>
+   <Row ss:Height="16.5">
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">C-Class 300</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">2018</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">32996</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Petrol</Data></Cell>
+    <Cell ss:StyleID="s131"/>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">65</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">241hp</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Sedan</Data></Cell>
+   </Row>
+   <Row ss:Height="16.5">
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">GLE 350</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">2018</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">42556</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Petrol</Data></Cell>
+    <Cell ss:StyleID="s123"><Data ss:Type="String">Automatic</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">93</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">302hp</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">SUV</Data></Cell>
+   </Row>
+   <Row ss:Height="16.5">
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">AMG GT53</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">2019</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">79996</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Petrol</Data></Cell>
+    <Cell ss:StyleID="s123"><Data ss:Type="String">Automatic</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">65</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">429hp</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Coupe</Data></Cell>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s132"/>
+   </Row>
+   <Row ss:Height="16.5">
+    <Cell ss:StyleID="s120"><Data ss:Type="String">BMW</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">428 Gran</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">2016</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">34116</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Petrol</Data></Cell>
+    <Cell ss:StyleID="s123"><Data ss:Type="String">Automatic</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">60</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">240hp</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Coupe</Data></Cell>
+   </Row>
+   <Row ss:Height="16.5">
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s120"><Data ss:Type="Number">320</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">2018</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">28716</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Petrol</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Manual</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">60</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">180hp</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Sedan</Data></Cell>
+   </Row>
+   <Row ss:Height="16.5">
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">540d</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">2019</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">50996</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Diesel</Data></Cell>
+    <Cell ss:StyleID="s123"><Data ss:Type="String">Automatic</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">66</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">261hp</Data></Cell>
+    <Cell ss:StyleID="s131"/>
+   </Row>
+   <Row ss:Height="16.5">
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">X3</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">2018</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">34916</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Petrol</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Manual</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">65</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">258hp</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">SUV</Data></Cell>
+   </Row>
+   <Row ss:Height="16.5">
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">X7</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">2019</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">59916</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Petrol</Data></Cell>
+    <Cell ss:StyleID="s123"><Data ss:Type="String">Automatic</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">83</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">335hp</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">SUV</Data></Cell>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s132"/>
+   </Row>
+   <Row ss:Height="16.5">
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Volkswagen</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Golf</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">2019</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">18192</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Petrol</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Manual</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">50</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">147hp</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Hatchback</Data></Cell>
+   </Row>
+   <Row ss:Height="16.5">
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Beetle</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">2018</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">16892</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Diesel</Data></Cell>
+    <Cell ss:StyleID="s123"><Data ss:Type="String">Automatic</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">55</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">174hp</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Hatchback</Data></Cell>
+   </Row>
+   <Row ss:Height="16.5">
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Passat</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">2017</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">18608</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Petrol</Data></Cell>
+    <Cell ss:StyleID="s123"><Data ss:Type="String">Automatic</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">70</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">170hp</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Sedan</Data></Cell>
+   </Row>
+   <Row ss:Height="16.5">
+    <Cell ss:StyleID="s120"><Data ss:Type="String">KIA</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Optima</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">2019</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">19132</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Petrol</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Manual</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">84</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">185hp</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Sedan</Data></Cell>
+   </Row>
+   <Row ss:Height="16.5">
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Cadenza</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">2018</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">26552</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Petrol</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Manual</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">84</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">290hp</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Sedan</Data></Cell>
+   </Row>
+   <Row ss:Height="16.5">
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Forte</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">2016</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">16592</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Petrol</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Automatic</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">60</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">173hp</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Coupe</Data></Cell>
+   </Row>
+   <Row ss:Height="16.5">
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Smart</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="String">Pure2dr</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">2018</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">19640</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Electric</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Automatic</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">NA</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">80rpm</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Coupe</Data></Cell>
+   </Row>
+   <Row ss:Height="32.25">
+    <Cell ss:StyleID="s120"><Data ss:Type="String">LandRover</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">RangeRover Evoque</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">2019</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">34236</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Petrol</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Automatic</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">82</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">237hp</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">SUV</Data></Cell>
+   </Row>
+   <Row ss:Height="16.5">
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Discovery</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">2019</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">43180</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Petrol</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Automatic</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">107</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">340hp</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">SUV</Data></Cell>
+   </Row>
+   <Row ss:Height="32.25">
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Mazda</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">CX3</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">2019</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">17148</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Gas</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Automatic</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">148hp</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Crossver SUV</Data></Cell>
+   </Row>
+   <Row ss:Height="32.25">
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">CX5</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">2018</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">20116</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Gas</Data></Cell>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">Manual</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s120"><Data ss:Type="String">187hp</Data></Cell>
+    <Cell ss:StyleID="s134"><Data ss:Type="String">Crossver SUV</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>17</ActiveRow>
+     <ActiveCol>10</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Sheet2">
+  <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="1" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Sheet3">
+  <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="1" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
