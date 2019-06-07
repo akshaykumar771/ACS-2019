@@ -22,7 +22,9 @@ namespace single_2
     /// </summary>
     public partial class MainWindow : Window, INotifyPropertyChanged
     {
-        public static ObservableCollection<CarInfo> Info = new ObservableCollection<CarInfo>();
+        public static ObservableCollection<CarInfo> Info;
+        
+        // = new ObservableCollection<CarInfo>();
        
 
         bool carNameSet = false;

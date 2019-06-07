@@ -47,7 +47,7 @@
 
         </ComboBox>
         <!--</StackPanel>-->
-        <DataGrid Name="Grd_carInfo" HorizontalAlignment="Left" Height="217" Margin="143,347,0,0" VerticalAlignment="Top" Width="615" AutoGenerateColumns="False">>
+        <DataGrid Name="Grd_carInfo" HorizontalAlignment="Left" Height="217" Margin="143,347,0,0" VerticalAlignment="Top" Width="615" AutoGenerateColumns="False">
          <DataGrid.Columns>
                 <DataGridTextColumn Header="Manf." Binding="{Binding Manufacturer}" Width="*" IsReadOnly="True" />
                 <DataGridTextColumn Header="Model." Binding="{Binding Model}" Width="*" IsReadOnly="True" />
