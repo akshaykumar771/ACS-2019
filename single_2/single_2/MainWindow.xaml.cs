@@ -84,7 +84,7 @@ namespace single_2
                     selectedBrand = "BMW";
                     break;
                 case "System.Windows.Controls.ComboBoxItem: Audi":
-                    selectedBrand = "Audi";
+                    selectedBrand = "AUDI";
                     break;
                 case "System.Windows.Controls.ComboBoxItem: Benz":
                     selectedBrand = "Benz";
@@ -209,7 +209,7 @@ namespace single_2
                 if ((bool)Chbx_manual.IsChecked && (bool)Chbx_auto.IsChecked)
                 {
                     //where car.Type =manual || car.type = auto
-                    res = new ObservableCollection<CarInfo>(Info.Where(car => car.Manufacturer == selectedBrand && car.Year == selectedYear && car.Price >= selectedPriceFrom && car.Price <= selectedPriceTo && car.Fuel == selectedFuel && (car.Type == "manual" || car.Type == "auto")));
+                    res = new ObservableCollection<CarInfo>(Info.Where(car => car.Manufacturer == selectedBrand && car.Year == selectedYear && Int32.Parse(car.Price) >= selectedPriceFrom && Int32.Parse(car.Price) <= selectedPriceTo && car.Fuel == selectedFuel && (car.Type == "manual" || car.Type == "auto")));
                 }
                 else
                 {
@@ -226,7 +226,7 @@ namespace single_2
                         isTypeSelected = true;
                     }
 
-                    res = new ObservableCollection<CarInfo>(Info.Where(car => car.Manufacturer == selectedBrand && car.Year == selectedYear && car.Price >= selectedPriceFrom && car.Price <= selectedPriceTo && car.Fuel == selectedFuel && (isTypeSelected ? car.Type == selectedType : (car.Type == "manual" || car.Type == "auto"))));
+                    res = new ObservableCollection<CarInfo>(Info.Where(car => car.Manufacturer == selectedBrand && car.Year == selectedYear && Int32.Parse(car.Price) >= selectedPriceFrom && Int32.Parse(car.Price) <= selectedPriceTo && car.Fuel == selectedFuel && (isTypeSelected ? car.Type == selectedType : (car.Type == "manual" || car.Type == "auto"))));
                     //COndi car.Type = selectedType
                 }
                 //var res = Info.Where(car => car.Manufacturer == selectedBrand && car.Year == selectedYear && car.Price >= selectedPriceFrom && car.Price <= selectedPriceTo && car.Fuel == selectedFuel);
