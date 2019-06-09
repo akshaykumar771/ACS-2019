@@ -7,14 +7,21 @@
         mc:Ignorable="d"
         Title="W_compareList" Height="450" Width="800">
     <Grid>
-        <DataGrid Name="Grd_cmpTable" HorizontalAlignment="Left" Height="399" Margin="138,50,0,-30" VerticalAlignment="Top" Width="344" >
-            <!--<DataGrid.Columns>
-                <DataGridTextColumn Header="Model" MinWidth="10" />
-                <DataGridTextColumn Header="Make" MinWidth="10"/>
-                <DataGridTextColumn Binding="{Binding Price}" Header="Price" MinWidth="10"/>
-                <DataGridTextColumn Binding="{Binding Transmission}" Header="Transmission" MinWidth="10"/>
-                <DataGridTextColumn Binding="{Binding Year}" Header="Year" MinWidth="10"/>
-            </DataGrid.Columns>-->
+        <DataGrid Name="Grd_cmpTable" HorizontalAlignment="Stretch" Height="399" Margin="138,50,0,-30" VerticalAlignment="Top" Width="344" AutoGenerateColumns="False" IsReadOnly="True" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Model" Binding="{Binding Model}"  MinWidth="10"  />
+                <DataGridTextColumn Header="Make" Binding="{Binding Manufacturer}" MinWidth="10" />
+                <DataGridTextColumn Binding="{Binding Price}" Header="Price" MinWidth="10" />
+                <DataGridTextColumn Binding="{Binding Type}" Header="Transmission"/>
+                <DataGridTextColumn Binding="{Binding Year}" Header="Year" MinWidth="10" />
+                <DataGridTemplateColumn x:Name="Img" Width="*"  Header="Image" >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding srcUri}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
             <DataGrid.Resources>
                 <Style x:Key="DataGridBase" TargetType="Control">
                     <Setter Property="LayoutTransform">

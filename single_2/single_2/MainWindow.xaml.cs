@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml;
 
 namespace single_2
 {
@@ -23,10 +24,6 @@ namespace single_2
     public partial class MainWindow : Window, INotifyPropertyChanged
     {
         public static ObservableCollection<CarInfo> Info;
-        
-        // = new ObservableCollection<CarInfo>();
-       
-
         bool carNameSet = false;
         bool carYearSet = false;
         bool carPriceSet = false;
@@ -37,132 +34,117 @@ namespace single_2
         int selectedPriceTo;
         String selectedFuel = "";
         public static ObservableCollection<CarInfo> compareList = new ObservableCollection<CarInfo>();
-        
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
         public MainWindow()
         {
             InitializeComponent();
             remoMethod();
-            
             Grd_carInfo.ItemsSource = Info;
-            //Grd_carInfo.
-            
-
-        }
+         }
 
         private void remoMethod()
         {
             var manInfo = new ObservableCollection<CarInfo>();
-            //for (int i = 0; i < 5; i++)
-            //{
-            //    manInfo.Add(new CarInfo { Manufacturer = "BMW", Model = "520" + i, Price = 20000, Year = (2012 + i).ToString(), Type = "manual", Fuel="Petrol" });
-            //}
-            //for (int i = 0; i < 5; i++)
-            //{
-            //    manInfo.Add(new CarInfo { Manufacturer = "Benz", Model = "520" + i, Price = 40000, Year = (2014 + i).ToString(), Type = "auto", Fuel = "Diesel" });
-            //}
-            //for (int i = 0; i < 5; i++)
-            //{
-            //    manInfo.Add(new CarInfo { Manufacturer = "Audi", Model = "520" + i, Price = 60000 , Year = (2016 + i).ToString(), Type = "manual", Fuel = "Electric" });
-            //}
-
-            //manInfo.Add(new CarInfo { Manufacturer = "BMW", Model = "akshay" , Price = 30000, Year = 2016.ToString(), Type = "manual", Fuel = "Petrol" });
-
             Info = Storage.ReadXml<ObservableCollection<CarInfo>>("Info.xml");
             Grd_carInfo.ItemsSource = Info;
-            // Storage.WriteXml<ObservableCollection<CarInfo>>(Info, "Info.xml");
+            var manName = Info.Select(c => c.Manufacturer).Distinct();
+            foreach (var item in manName)
+            {
+                Cbx_Cb.Items.Add(item);
+            }
         }
 
         private void Cbx_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             this.carNameSet = true;
-            //Grd_carInfo.ItemsSource = InfoToDisplay;
-            var cbxValue = Cbx_Cb.SelectedValue.ToString();
-
-            switch (cbxValue)
+            if (Cbx_Cb.SelectedValue != null)
             {
-                case "System.Windows.Controls.ComboBoxItem: BMW":
-                    selectedBrand = "BMW";
-                    break;
-                case "System.Windows.Controls.ComboBoxItem: Audi":
-                    selectedBrand = "AUDI";
-                    break;
-                case "System.Windows.Controls.ComboBoxItem: Benz":
-                    selectedBrand = "Benz";
-                    break;
+                selectedBrand = Cbx_Cb.SelectedValue.ToString();
+                Console.WriteLine(selectedBrand);
             }
-            Console.WriteLine(selectedBrand);
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void OnPropertyChanged(string v)
-        {
-            PropertyChangedEventHandler handler = PropertyChanged;
-            if(handler != null)
-            {
-                handler(this, new PropertyChangedEventArgs(v));
-            }
-        }
+         }
 
         private void Cbx_year_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            this.carYearSet = true;
-            String cbxYearValue = Cbx_Cb_Year.SelectedItem.ToString();
-
-            //TempInfo = new ObservableCollection<CarInfo>(from n in TempInfo where n.Year == cbxYearValue.Content select n);
-
-            switch (cbxYearValue)
+            if (Cbx_Cb_Year.SelectedItem != null)
             {
-                case "System.Windows.Controls.ComboBoxItem: 2012":
-                    selectedYear = "2012";
-                    break;
-                case "System.Windows.Controls.ComboBoxItem: 2014":
-                    selectedYear = "2014";
-                    break;
-                case "System.Windows.Controls.ComboBoxItem: 2016":
-                    selectedYear = "2016";
-                    break;
+                this.carYearSet = true;
+                String cbxYearValue = Cbx_Cb_Year.SelectedItem.ToString();
+                switch (cbxYearValue)
+                {
+                    case "System.Windows.Controls.ComboBoxItem: 2014":
+                        selectedYear = "2014";
+                        break;
+                    case "System.Windows.Controls.ComboBoxItem: 2015":
+                        selectedYear = "2015";
+                        break;
+                    case "System.Windows.Controls.ComboBoxItem: 2016":
+                        selectedYear = "2016";
+                        break;
+                    case "System.Windows.Controls.ComboBoxItem: 2017":
+                        selectedYear = "2017";
+                        break;
+                    case "System.Windows.Controls.ComboBoxItem: 2018":
+                        selectedYear = "2018";
+                        break;
+                    case "System.Windows.Controls.ComboBoxItem: 2019":
+                        selectedYear = "2019";
+                        break;
+                }
             }
-            
         }
         private void Cbx_Cb_Price_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            this.carPriceSet = true;
-            var cbxPriceValue = Cbx_Cb_Price.SelectedValue.ToString();
-            switch (cbxPriceValue)
+            if (Cbx_Cb_Price.SelectedValue != null)
             {
-                case "System.Windows.Controls.ComboBoxItem: 0 - 20000":
-                    selectedPriceTo = 20000;
-                    selectedPriceFrom = 0;
-                    break;
-                case "System.Windows.Controls.ComboBoxItem: 20000 - 40000":
-                    selectedPriceTo = 40000;
-                    selectedPriceFrom = 20000;
-                    break;
-                case "System.Windows.Controls.ComboBoxItem: 40000 - 60000":
-                    selectedPriceTo = 60000;
-                    selectedPriceFrom = 40000;
-                    break;
+                this.carPriceSet = true;
+                var cbxPriceValue = Cbx_Cb_Price.SelectedValue.ToString();
+                switch (cbxPriceValue)
+                {
+                    case "System.Windows.Controls.ComboBoxItem: 0 - 20000":
+                        selectedPriceTo = 20000;
+                        selectedPriceFrom = 0;
+                        break;
+                    case "System.Windows.Controls.ComboBoxItem: 20000 - 40000":
+                        selectedPriceTo = 40000;
+                        selectedPriceFrom = 20000;
+                        break;
+                    case "System.Windows.Controls.ComboBoxItem: 40000 - 60000":
+                        selectedPriceTo = 60000;
+                        selectedPriceFrom = 40000;
+                        break;
+                    case "System.Windows.Controls.ComboBoxItem: 60000 - 80000":
+                        selectedPriceTo = 80000;
+                        selectedPriceFrom = 60000;
+                        break;
+                    case "System.Windows.Controls.ComboBoxItem: 80000 - 100000":
+                        selectedPriceTo = 100000;
+                        selectedPriceFrom = 80000;
+                        break;
+                }
             }
-            //Console.WriteLine(selectedPrice);
-         }
+        }
         private void Cbx_Cb_Fuel_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            this.carFuelSet = true;
-            var cbxFuelValue = Cbx_Cb_Fuel.SelectedValue.ToString();
-            switch (cbxFuelValue)
+            if (Cbx_Cb_Fuel.SelectedValue != null)
             {
-                case "System.Windows.Controls.ComboBoxItem: Petrol":
-                    selectedFuel = "Petrol";
-                    break;
-                case "System.Windows.Controls.ComboBoxItem: Diesel":
-                    selectedFuel = "Diesel";
-                    break;
-                case "System.Windows.Controls.ComboBoxItem: Electric":
-                    selectedFuel = "Electric";
-                    break;
+                this.carFuelSet = true;
+                var cbxFuelValue = Cbx_Cb_Fuel.SelectedValue.ToString();
+                switch (cbxFuelValue)
+                {
+                    case "System.Windows.Controls.ComboBoxItem: Petrol":
+                        selectedFuel = "Petrol";
+                        break;
+                    case "System.Windows.Controls.ComboBoxItem: Diesel":
+                        selectedFuel = "Diesel";
+                        break;
+                    case "System.Windows.Controls.ComboBoxItem: Electric":
+                        selectedFuel = "Electric";
+                        break;
+                }
             }
-            //Console.WriteLine(selectedPrice);
         }
 
         private void Btn_addCompare_Click(object sender, RoutedEventArgs e)
@@ -173,14 +155,21 @@ namespace single_2
             }
             else
             {
-                CarInfo carInfo = (CarInfo)Grd_carInfo.SelectedItem;
-                if (compareList.Contains(carInfo))
+                if (compareList.Count<=2)
                 {
-                    MessageBox.Show("Already added to the list!!");
+                    CarInfo carInfo = (CarInfo)Grd_carInfo.SelectedItem;
+                    if (compareList.Contains(carInfo))
+                    {
+                        MessageBox.Show("Already added to the list!!");
+                    }
+                    else
+                    {
+                        compareList.Add(carInfo);
+                    }
                 }
                 else
                 {
-                    compareList.Add(carInfo);
+                    MessageBox.Show("You can only compare 3 items at once.");
                 }
 
             }
@@ -189,47 +178,25 @@ namespace single_2
         private void Btn_gotoCompare_Click(object sender, RoutedEventArgs e)
         {
             W_compareList cmp = new W_compareList();
+            cmp.Owner = this;
             cmp.Show();
+            Visibility = Visibility.Hidden;
         }
-
-    
 
         private void Button_Sales_Click(object sender, RoutedEventArgs e)
         {
             CarSales cs = new CarSales();
             cs.Show();
+           
         }
 
         private void Btn_Go_Click(object sender, RoutedEventArgs e)
         {
             bool isdataset = (carNameSet && carYearSet && carPriceSet && carFuelSet);
-            if(isdataset)
+            if (isdataset)
             {
                 var res = Info;
-                if ((bool)Chbx_manual.IsChecked && (bool)Chbx_auto.IsChecked)
-                {
-                    //where car.Type =manual || car.type = auto
-                    res = new ObservableCollection<CarInfo>(Info.Where(car => car.Manufacturer == selectedBrand && car.Year == selectedYear && Int32.Parse(car.Price) >= selectedPriceFrom && Int32.Parse(car.Price) <= selectedPriceTo && car.Fuel == selectedFuel && (car.Type == "manual" || car.Type == "auto")));
-                }
-                else
-                {
-                    bool isTypeSelected = false;
-                    string selectedType = "";
-                    if((bool)Chbx_manual.IsChecked)
-                    {
-                        selectedType = "manual";
-                        isTypeSelected = true;
-                    }
-                    else if((bool)Chbx_auto.IsChecked)
-                    {
-                        selectedType = "auto";
-                        isTypeSelected = true;
-                    }
-
-                    res = new ObservableCollection<CarInfo>(Info.Where(car => car.Manufacturer == selectedBrand && car.Year == selectedYear && Int32.Parse(car.Price) >= selectedPriceFrom && Int32.Parse(car.Price) <= selectedPriceTo && car.Fuel == selectedFuel && (isTypeSelected ? car.Type == selectedType : (car.Type == "manual" || car.Type == "auto"))));
-                    //COndi car.Type = selectedType
-                }
-                //var res = Info.Where(car => car.Manufacturer == selectedBrand && car.Year == selectedYear && car.Price >= selectedPriceFrom && car.Price <= selectedPriceTo && car.Fuel == selectedFuel);
+                res = new ObservableCollection<CarInfo>(Info.Where(car => car.Manufacturer == selectedBrand && car.Year == selectedYear && float.Parse(car.Price) >= selectedPriceFrom && float.Parse(car.Price) <= selectedPriceTo && car.Fuel == selectedFuel )); 
                 Grd_carInfo.ItemsSource = res;
             }
             else
@@ -254,43 +221,22 @@ namespace single_2
             Console.WriteLine();
 
         }
+
+        private void Btn_Clear_Click(object sender, RoutedEventArgs e)
+        {
+            Cbx_Cb.SelectedIndex = -1;
+            Cbx_Cb_Fuel.SelectedIndex = -1;
+            Cbx_Cb_Price.SelectedIndex = -1;
+            Cbx_Cb_Year.SelectedIndex = -1;
+            Grd_carInfo.ItemsSource = Info;
+            carNameSet = false;
+            carYearSet = false;
+            carPriceSet = false;
+            carFuelSet = false;
+        }
     }
 }
 
-//}
-//}
-
-
-
-//private void CheckBox_Checked(object sender, RoutedEventArgs e)
-//{
-//    if (Chbx_manual.IsChecked == true)
-//    {
-//        foreach (var car in Info)
-//        {
-//            if (car.type == "manual")
-//            {
-//                InfoToDisplay.Add(car);
-//            }
-//        }
-//    }
-//    Console.WriteLine();
-
-//}
-
-//private void OnCheckBoxClick(object sender, RoutedEventArgs e)
-//{
-//    if (Chbx_manual.IsChecked == true) {
-//        foreach (var car in Info)
-//        {
-//            if (car.type == "manual")
-//            {
-//                InfoToDisplay.Add(car);
-//            }
-//        }
-//    }
-
-//}
 
 
 

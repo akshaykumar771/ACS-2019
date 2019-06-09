@@ -16,32 +16,30 @@
             <ColumnDefinition Width="37*"/>
             <ColumnDefinition Width="29*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel Orientation="Horizontal" Margin="10,19,10,253" Grid.Row="1">
-            <ComboBox Name="Cbx_Manf" Width="183" Margin="10,10,0,60" SelectionChanged="Cbx_Manf_SelectionChanged">
-                <ComboBoxItem  FontSize="12" FontWeight="Bold">BMW</ComboBoxItem>
-                <ComboBoxItem  FontSize="12" FontWeight="Bold">Audi</ComboBoxItem>
-                <ComboBoxItem  FontSize="12" FontWeight="Bold">Benz</ComboBoxItem>
-
-            </ComboBox>
-            <ComboBox Name="Cbx_Year" Width="183" Margin="40,10,0,60">
-                <ComboBoxItem  FontSize="12" FontWeight="Bold">2014</ComboBoxItem>
-                <ComboBoxItem  FontSize="12" FontWeight="Bold">2017</ComboBoxItem>
-                <ComboBoxItem  FontSize="12" FontWeight="Bold">2018</ComboBoxItem>
+        <StackPanel Orientation="Vertical" Margin="10,19,10,253" Grid.Row="1">
+            <TextBlock TextWrapping="Wrap" Text="Year Of Manufacture" Margin="10,0,0,83" HorizontalAlignment="Left" Width="132" Height="27" FontSize="14"/>
+            <ComboBox x:Name="Cbx_Year" ToolTip="Please select the manufacture year of the car" HorizontalAlignment="Left" Margin="10,-80,0,0" VerticalAlignment="Top" Width="184" Height="42" SelectionChanged="Cbx_Year_SelectionChanged">
+                <ComboBoxItem FontSize="12" FontWeight="Bold" Content="2015"/>
+                <ComboBoxItem FontSize="12" FontWeight="Bold" Content="2016"/>
+                <ComboBoxItem FontSize="12" FontWeight="Bold" Content="2017"/>
+                <ComboBoxItem FontSize="12" FontWeight="Bold" Content="2018"/>
+                <ComboBoxItem FontSize="12" FontWeight="Bold" Content="2019"/>
             </ComboBox>
         </StackPanel>
         <DataGrid Name="Grd_carSaleInfo" HorizontalAlignment="Left" Height="238" Margin="10,130,0,0" Grid.Row="1" VerticalAlignment="Top" Width="424" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Manf." Binding="{Binding manufacturer}" Width="*" IsReadOnly="True" />
+                <DataGridTextColumn Header="Year" Binding="{Binding year}" Width="*" IsReadOnly="True" />
                 <DataGridTextColumn Header="SoldCount" Binding="{Binding sold}" Width="*" IsReadOnly="True" />
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Grid.Column="1" HorizontalAlignment="Left" Height="333" Margin="10,35,0,0" Grid.Row="1" VerticalAlignment="Top" Width="328">
             <lvc:CartesianChart Series="{Binding SeriesCollection}" LegendLocation="Left" Height="336">
                 <lvc:CartesianChart.AxisX>
-                    <lvc:Axis Title="Salesman" Labels="{Binding Labels}"/>
+                    <lvc:Axis Title="Year Of Manufacture" Labels="{Binding Labels}"/>
                 </lvc:CartesianChart.AxisX>
                 <lvc:CartesianChart.AxisY>
-                    <lvc:Axis Title="Sold Apps" LabelFormatter="{Binding Formatter}"/>
+                    <lvc:Axis Title="Sold Count" LabelFormatter="{Binding Formatter}"/>
                 </lvc:CartesianChart.AxisY>
             </lvc:CartesianChart>
         </StackPanel>
