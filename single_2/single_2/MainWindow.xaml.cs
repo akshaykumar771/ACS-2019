@@ -29,13 +29,15 @@ namespace single_2
         bool carYearSet = false;
         bool carPriceSet = false;
         bool carFuelSet = false;
+        bool carManualSet = false;
+        bool carAutoSet = false;
         String selectedBrand = "";
         String selectedYear = "";
         int selectedPriceFrom;
         int selectedPriceTo;
         String selectedFuel = "";
         public static ObservableCollection<CarInfo> compareList = new ObservableCollection<CarInfo>();
-        string srcVar = "C:/Users/ins_IT/Desktop/delete/ACS-2019/single_2/single_2/Images/1-37-512.png";
+        //string srcVar = "C:/Users/ins_IT/Desktop/delete/ACS-2019/single_2/single_2/Images/1-37-512.png";
         public event PropertyChangedEventHandler PropertyChanged;
 
 
@@ -44,10 +46,6 @@ namespace single_2
             InitializeComponent();
             remoMethod();
             Grd_carInfo.ItemsSource = Info;
-             Console.WriteLine("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
-             Console.WriteLine(AppDomain.CurrentDomain.BaseDirectory);
-            Console.WriteLine("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
-
         }
 
         private void remoMethod()
@@ -149,6 +147,9 @@ namespace single_2
                     case "System.Windows.Controls.ComboBoxItem: Electric":
                         selectedFuel = "Electric";
                         break;
+                    case "System.Windows.Controls.ComboBoxItem: Gas":
+                        selectedFuel = "Gas";
+                        break;
                 }
             }
         }
@@ -192,44 +193,49 @@ namespace single_2
         private void Button_Sales_Click(object sender, RoutedEventArgs e)
         {
             CarSales cs = new CarSales();
+            cs.Owner = this;
             cs.Show();
+            Visibility = Visibility.Hidden;
            
         }
 
         private void Btn_Go_Click(object sender, RoutedEventArgs e)
         {
-            bool isdataset = (carNameSet && carYearSet && carPriceSet && carFuelSet);
+            bool isdataset = (carNameSet && carYearSet && carPriceSet && carFuelSet );
             if (isdataset)
             {
+
+                bool TypeM = (bool)Chbx_manual.IsChecked;
+                bool TypeA = (bool)Chbx_auto.IsChecked;
+                string carTypeString = "";
+                if(TypeM)
+                {
+                    carTypeString = "Manual";
+                }
+                if(TypeA)
+                {
+                    carTypeString = "Automatic";
+                }
                 var res = Info;
-                res = new ObservableCollection<CarInfo>(Info.Where(car => car.Manufacturer == selectedBrand && car.Year == selectedYear && float.Parse(car.Price) >= selectedPriceFrom && float.Parse(car.Price) <= selectedPriceTo && car.Fuel == selectedFuel )); 
+                if(String.IsNullOrEmpty(carTypeString))
+                {
+                    res = new ObservableCollection<CarInfo>(Info.Where(car => car.Manufacturer == selectedBrand && car.Year == selectedYear && float.Parse(car.Price) >= selectedPriceFrom && float.Parse(car.Price) <= selectedPriceTo && car.Fuel == selectedFuel)); 
+                }
+                else
+                {
+                    res = new ObservableCollection<CarInfo>(Info.Where(car => car.Manufacturer == selectedBrand && car.Year == selectedYear && float.Parse(car.Price) >= selectedPriceFrom && float.Parse(car.Price) <= selectedPriceTo && car.Fuel == selectedFuel && car.Type == carTypeString));
+                }
                 Grd_carInfo.ItemsSource = res;
                 if (res.Count == 0)
                 {
                     MessageBox.Show("No match found");
+                   
                 }
             }
             else
             {
                 MessageBox.Show("Please select all the options and then proceed");
             }
-        }
-
-        private void Chbx_manual_Checked(object sender, RoutedEventArgs e)
-        {
-            if (Chbx_manual.IsChecked == true)
-            {
-                foreach (var car in Info)
-                {
-                    if (car.Type == "manual")
-                    {
-                        
-                    }
-                }
-
-            }
-            Console.WriteLine();
-
         }
 
         private void Btn_Clear_Click(object sender, RoutedEventArgs e)

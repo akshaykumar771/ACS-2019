@@ -7,7 +7,7 @@
 		<Year>2018</Year>
 		<Fuel>Petrol</Fuel>
 		<Type>Automatic</Type>
-		<image>A_Class.jpg</image>
+		<image>Q3.jpeg</image>
 		<seats>5</seats>
 		<fuelTankCapacity>64</fuelTankCapacity>
 		<horsePower>200 hp</horsePower>
@@ -20,7 +20,7 @@
 		<Year>2014</Year>
 		<Fuel>Petrol</Fuel>
 		<Type>Manual</Type>
-		<image>B_class.jpg</image>
+		<image>S5.jpeg</image>
 		<seats>4</seats>
 		<fuelTankCapacity>61</fuelTankCapacity>
 		<horsePower>333 hp</horsePower>
@@ -33,9 +33,9 @@
 		<Year>2015</Year>
 		<Fuel>Petrol</Fuel>
 		<Type>Automatic</Type>
-		<image>C_Class.jpg</image>
+		<image>RS5.jpeg</image>
 		<seats>4</seats>
-		<fuelTankCapacity>1111111</fuelTankCapacity>
+		<fuelTankCapacity>61</fuelTankCapacity>
 		<horsePower>450 hp</horsePower>
 		<carType>Cabriolet</carType>
 	</CarInfo>
@@ -46,9 +46,9 @@
 		<Year>2019</Year>
 		<Fuel>Petrol</Fuel>
 		<Type>Manual</Type>
-		<image>GLE_Class.jpg</image>
+		<image>S3.png</image>
 		<seats>5</seats>
-		<fuelTankCapacity>1111111</fuelTankCapacity>
+		<fuelTankCapacity>55</fuelTankCapacity>
 		<horsePower>320 hp</horsePower>
 	</CarInfo>
 	<CarInfo>
@@ -58,7 +58,7 @@
 		<Year>2017</Year>
 		<Fuel>Diesel</Fuel>
 		<Type>Automatic</Type>
-		<image>AMG_Class.jpg</image>
+		<image>A4.jpeg</image>
 		<seats>5</seats>
 		<fuelTankCapacity>63</fuelTankCapacity>
 		<horsePower>190 hp</horsePower>
@@ -86,7 +86,6 @@
 		<Type>Automatic</Type>
 		<image>B_class.jpg</image>
 		<seats>5</seats>
-		<fuelTankCapacity>1111111</fuelTankCapacity>
 		<horsePower>177hp</horsePower>
 		<carType>Hatchback</carType>
 	</CarInfo>
@@ -96,6 +95,7 @@
 		<Price>32996</Price>
 		<Year>2018</Year>
 		<Fuel>Petrol</Fuel>
+		<Type>Automatic</Type>
 		<image>C_Class.jpg</image>
 		<seats>5</seats>
 		<fuelTankCapacity>65</fuelTankCapacity>

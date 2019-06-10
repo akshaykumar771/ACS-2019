@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:single_2"
         mc:Ignorable="d"
-        Title="W_compareList" Height="450" Width="800">
+        Title="W_compareList" Height="424.954" Width="800">
     <Grid>
-        <DataGrid Name="Grd_cmpTable" HorizontalAlignment="Stretch" Height="405" Margin="32,10,356.6,0" VerticalAlignment="Top" AutoGenerateColumns="False" IsReadOnly="True" >
+        <DataGrid Name="Grd_cmpTable" HorizontalAlignment="Stretch" Margin="17,2,389,-1" AutoGenerateColumns="False" IsReadOnly="True" >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Model" Binding="{Binding Model}"  MinWidth="10"  />
                 <DataGridTextColumn Header="Make" Binding="{Binding Manufacturer}" MinWidth="10" />
                 <DataGridTextColumn Binding="{Binding Price}" Header="Price" MinWidth="10" />
-                <DataGridTextColumn Binding="{Binding Type}" Header="Transmission"/>
+                <DataGridTextColumn Binding="{Binding Type}" Header="Transmission" MinWidth="10"/>
                 <DataGridTextColumn Binding="{Binding Year}" Header="Year" MinWidth="10" />
                 <DataGridTextColumn Binding="{Binding Fuel}" Header="Fuel" MinWidth="10" />
                 <DataGridTextColumn Binding="{Binding Type}" Header="Gear" MinWidth="10" />
@@ -23,7 +23,7 @@
                 <DataGridTemplateColumn x:Name="Img" Width="*"  Header="Image" >
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Image  Source="./Images/1-37-512.png" Stretch="Fill"/>
+                            <Image Source="{Binding imagePath}" Stretch="Fill"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
@@ -63,7 +63,8 @@
                 </DataTemplate>
             </DataGrid.RowDetailsTemplate>
         </DataGrid>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="675,372,0,0" VerticalAlignment="Top" Width="94" Height="37" Click="Button_Back_Click"/>
+
+        <Button Content="Back" HorizontalAlignment="Left" Margin="642,347,0,0" VerticalAlignment="Top" Width="94" Height="37" Click="Button_Back_Click"/>
 
 
     </Grid>

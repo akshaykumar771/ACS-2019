@@ -20,10 +20,7 @@ namespace single_2
     /// </summary>
     public partial class W_compareList : Window
     {
-        public string srcUri {
-            get { return System.IO.Path.GetFullPath("/A_Class.jpg"); }
-                
-                }
+        
         public W_compareList()
         {
             InitializeComponent();
@@ -39,5 +36,7 @@ namespace single_2
             mw.Show();
             Visibility = Visibility.Hidden;
         }
+
+       
     }
 }

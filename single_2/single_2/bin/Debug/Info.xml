@@ -7,6 +7,11 @@
 		<Year>2018</Year>
 		<Fuel>Petrol</Fuel>
 		<Type>Automatic</Type>
+		<image>Q3.jpeg</image>
+		<seats>5</seats>
+		<fuelTankCapacity>64</fuelTankCapacity>
+		<horsePower>200hp</horsePower>
+		<carType>SUV</carType>
 	</CarInfo>
 	<CarInfo>
 		<Manufacturer>AUDI</Manufacturer>
@@ -15,6 +20,11 @@
 		<Year>2014</Year>
 		<Fuel>Petrol</Fuel>
 		<Type>Manual</Type>
+		<image>S5.jpeg</image>
+		<seats>4</seats>
+		<fuelTankCapacity>64</fuelTankCapacity>
+		<horsePower>200hp</horsePower>
+		<carType>SUV</carType>
 	</CarInfo>
 	<CarInfo>
 		<Manufacturer>AUDI</Manufacturer>
@@ -23,6 +33,11 @@
 		<Year>2015</Year>
 		<Fuel>Petrol</Fuel>
 		<Type>Automatic</Type>
+		<image>RS5.jpeg</image>
+		<seats>5</seats>
+		<fuelTankCapacity>64</fuelTankCapacity>
+		<horsePower>200hp</horsePower>
+		<carType>SUV</carType>
 	</CarInfo>
 	<CarInfo>
 		<Manufacturer>AUDI</Manufacturer>
@@ -31,6 +46,11 @@
 		<Year>2019</Year>
 		<Fuel>Petrol</Fuel>
 		<Type>Manual</Type>
+		<image>S3.png</image>
+		<seats>5</seats>
+		<fuelTankCapacity>64</fuelTankCapacity>
+		<horsePower>200hp</horsePower>
+		<carType>SUV</carType>
 	</CarInfo>
 	<CarInfo>
 		<Manufacturer>AUDI</Manufacturer>
@@ -39,6 +59,11 @@
 		<Year>2017</Year>
 		<Fuel>Diesel</Fuel>
 		<Type>Automatic</Type>
+		<image>A4.jpeg</image>
+		<seats>5</seats>
+		<fuelTankCapacity>64</fuelTankCapacity>
+		<horsePower>200hp</horsePower>
+		<carType>SUV</carType>
 	</CarInfo>
 	<CarInfo>
 		<Manufacturer>Mercedes Benz</Manufacturer>
@@ -47,6 +72,11 @@
 		<Year>2019</Year>
 		<Fuel>Diesel</Fuel>
 		<Type>Automatic</Type>
+		<image>A_Class.jpg</image>
+		<seats>5</seats>
+		<fuelTankCapacity>64</fuelTankCapacity>
+		<horsePower>200hp</horsePower>
+		<carType>SUV</carType>
 	</CarInfo>
 	<CarInfo>
 		<Manufacturer>Mercedes Benz</Manufacturer>
@@ -55,6 +85,11 @@
 		<Year>2017</Year>
 		<Fuel>Electric</Fuel>
 		<Type>Automatic</Type>
+		<image>B_class.jpg</image>
+		<seats>5</seats>
+		<fuelTankCapacity>64</fuelTankCapacity>
+		<horsePower>200hp</horsePower>
+		<carType>SUV</carType>
 	</CarInfo>
 	<CarInfo>
 		<Manufacturer>Mercedes Benz</Manufacturer>
@@ -62,6 +97,12 @@
 		<Price>32996</Price>
 		<Year>2018</Year>
 		<Fuel>Petrol</Fuel>
+		<Type>Manual</Type>
+		<image>C_Class.jpg</image>
+		<seats>5</seats>
+		<fuelTankCapacity>64</fuelTankCapacity>
+		<horsePower>200hp</horsePower>
+		<carType>SUV</carType>
 	</CarInfo>
 	<CarInfo>
 		<Manufacturer>Mercedes Benz</Manufacturer>
@@ -70,6 +111,11 @@
 		<Year>2018</Year>
 		<Fuel>Petrol</Fuel>
 		<Type>Automatic</Type>
+		<image>GLE_Class.jpg</image>
+		<seats>5</seats>
+		<fuelTankCapacity>64</fuelTankCapacity>
+		<horsePower>200hp</horsePower>
+		<carType>SUV</carType>
 	</CarInfo>
 	<CarInfo>
 		<Manufacturer>Mercedes Benz</Manufacturer>
@@ -78,6 +124,11 @@
 		<Year>2019</Year>
 		<Fuel>Petrol</Fuel>
 		<Type>Automatic</Type>
+		<image>AMG_Class.jpg</image>
+		<seats>5</seats>
+		<fuelTankCapacity>64</fuelTankCapacity>
+		<horsePower>200hp</horsePower>
+		<carType>SUV</carType>
 	</CarInfo>
 	<CarInfo>
 		<Manufacturer>BMW</Manufacturer>
@@ -86,6 +137,11 @@
 		<Year>2016</Year>
 		<Fuel>Petrol</Fuel>
 		<Type>Automatic</Type>
+		<image>428_Gran.jpg</image>
+		<seats>5</seats>
+		<fuelTankCapacity>64</fuelTankCapacity>
+		<horsePower>200hp</horsePower>
+		<carType>SUV</carType>
 	</CarInfo>
 	<CarInfo>
 		<Manufacturer>BMW</Manufacturer>
@@ -94,6 +150,11 @@
 		<Year>2018</Year>
 		<Fuel>Petrol</Fuel>
 		<Type>Manual</Type>
+		<image>320.jpg</image>
+		<seats>5</seats>
+		<fuelTankCapacity>64</fuelTankCapacity>
+		<horsePower>200hp</horsePower>
+		<carType>SUV</carType>
 	</CarInfo>
 	<CarInfo>
 		<Manufacturer>BMW</Manufacturer>
@@ -102,6 +163,11 @@
 		<Year>2019</Year>
 		<Fuel>Diesel</Fuel>
 		<Type>Automatic</Type>
+		<image>540d.png</image>
+		<seats>5</seats>
+		<fuelTankCapacity>64</fuelTankCapacity>
+		<horsePower>200hp</horsePower>
+		<carType>SUV</carType>
 	</CarInfo>
 	<CarInfo>
 		<Manufacturer>BMW</Manufacturer>
@@ -110,6 +176,11 @@
 		<Year>2018</Year>
 		<Fuel>Petrol</Fuel>
 		<Type>Manual</Type>
+		<image>X3.jpg</image>
+		<seats>5</seats>
+		<fuelTankCapacity>64</fuelTankCapacity>
+		<horsePower>200hp</horsePower>
+		<carType>SUV</carType>
 	</CarInfo>
 	<CarInfo>
 		<Manufacturer>BMW</Manufacturer>
@@ -118,6 +189,11 @@
 		<Year>2019</Year>
 		<Fuel>Petrol</Fuel>
 		<Type>Automatic</Type>
+		<image>X7.jpg</image>
+		<seats>5</seats>
+		<fuelTankCapacity>64</fuelTankCapacity>
+		<horsePower>200hp</horsePower>
+		<carType>SUV</carType>
 	</CarInfo>
 	<CarInfo>
 		<Manufacturer>Volkswagen</Manufacturer>
@@ -126,6 +202,11 @@
 		<Year>2019</Year>
 		<Fuel>Petrol</Fuel>
 		<Type>Manual</Type>
+		<image>golf.jpg</image>
+		<seats>5</seats>
+		<fuelTankCapacity>64</fuelTankCapacity>
+		<horsePower>200hp</horsePower>
+		<carType>SUV</carType>
 	</CarInfo>
 	<CarInfo>
 		<Manufacturer>Volkswagen</Manufacturer>
@@ -134,6 +215,11 @@
 		<Year>2018</Year>
 		<Fuel>Diesel</Fuel>
 		<Type>Automatic</Type>
+		<image>bettle.jpg</image>
+		<seats>5</seats>
+		<fuelTankCapacity>64</fuelTankCapacity>
+		<horsePower>200hp</horsePower>
+		<carType>SUV</carType>
 	</CarInfo>
 	<CarInfo>
 		<Manufacturer>Volkswagen</Manufacturer>
@@ -142,6 +228,11 @@
 		<Year>2017</Year>
 		<Fuel>Petrol</Fuel>
 		<Type>Automatic</Type>
+		<image>passat.jpg</image>
+		<seats>5</seats>
+		<fuelTankCapacity>64</fuelTankCapacity>
+		<horsePower>200hp</horsePower>
+		<carType>SUV</carType>
 	</CarInfo>
 	<CarInfo>
 		<Manufacturer>KIA</Manufacturer>
@@ -150,6 +241,11 @@
 		<Year>2019</Year>
 		<Fuel>Petrol</Fuel>
 		<Type>Manual</Type>
+		<image>optima.jpg</image>
+		<seats>5</seats>
+		<fuelTankCapacity>64</fuelTankCapacity>
+		<horsePower>200hp</horsePower>
+		<carType>SUV</carType>
 	</CarInfo>
 	<CarInfo>
 		<Manufacturer>KIA</Manufacturer>
@@ -158,6 +254,11 @@
 		<Year>2018</Year>
 		<Fuel>Petrol</Fuel>
 		<Type>Manual</Type>
+		<image>cadenza.jpg</image>
+		<seats>5</seats>
+		<fuelTankCapacity>64</fuelTankCapacity>
+		<horsePower>200hp</horsePower>
+		<carType>SUV</carType>
 	</CarInfo>
 	<CarInfo>
 		<Manufacturer>KIA</Manufacturer>
@@ -166,6 +267,11 @@
 		<Year>2016</Year>
 		<Fuel>Petrol</Fuel>
 		<Type>Automatic</Type>
+		<image>forte.jpg</image>
+		<seats>5</seats>
+		<fuelTankCapacity>64</fuelTankCapacity>
+		<horsePower>200hp</horsePower>
+		<carType>SUV</carType>
 	</CarInfo>
 	<CarInfo>
 		<Manufacturer>Smart</Manufacturer>
@@ -174,6 +280,11 @@
 		<Year>2018</Year>
 		<Fuel>Electric</Fuel>
 		<Type>Automatic</Type>
+		<image>smart.jpg</image>
+		<seats>5</seats>
+		<fuelTankCapacity>64</fuelTankCapacity>
+		<horsePower>200hp</horsePower>
+		<carType>SUV</carType>
 	</CarInfo>
 	<CarInfo>
 		<Manufacturer>LandRover</Manufacturer>
@@ -182,7 +293,11 @@
 		<Year>2019</Year>
 		<Fuel>Petrol</Fuel>
 		<Type>Automatic</Type>
-	</CarInfo>
+		<image>evoque.jpg</image>
+		<seats>5</seats>
+		<fuelTankCapacity>64</fuelTankCapacity>
+		<horsePower>200hp</horsePower>
+		<carType>SUV</carType>	</CarInfo>
 	<CarInfo>
 		<Manufacturer>LandRover</Manufacturer>
 		<Model>Discovery</Model>
@@ -190,6 +305,11 @@
 		<Year>2019</Year>
 		<Fuel>Petrol</Fuel>
 		<Type>Automatic</Type>
+		<image>discovery.jpg</image>
+		<seats>5</seats>
+		<fuelTankCapacity>64</fuelTankCapacity>
+		<horsePower>200hp</horsePower>
+		<carType>SUV</carType>
 	</CarInfo>
 	<CarInfo>
 		<Manufacturer>Mazda</Manufacturer>
@@ -198,6 +318,11 @@
 		<Year>2019</Year>
 		<Fuel>Gas</Fuel>
 		<Type>Automatic</Type>
+		<image>Mazda_CX3.jpg</image>
+		<seats>5</seats>
+		<fuelTankCapacity>64</fuelTankCapacity>
+		<horsePower>200hp</horsePower>
+		<carType>SUV</carType>
 	</CarInfo>
 	<CarInfo>
 		<Manufacturer>Mazda</Manufacturer>
@@ -206,5 +331,10 @@
 		<Year>2018</Year>
 		<Fuel>Gas</Fuel>
 		<Type>Manual</Type>
+		<image>mazda_CX5.jpg</image>
+		<seats>5</seats>
+		<fuelTankCapacity>64</fuelTankCapacity>
+		<horsePower>200hp</horsePower>
+		<carType>SUV</carType>
 	</CarInfo>
 </ArrayOfCarInfo>

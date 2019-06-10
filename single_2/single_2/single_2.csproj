@@ -119,7 +119,82 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="1-37-512.png" />
+    <Resource Include="Resources\Images\A_Class.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\320.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\428_Gran.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\540d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\A4.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\AMG_Class.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\B_class.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\beetle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\C_Class.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\cadenza.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\discovery.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\evoque.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\forte.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\GLE_Class.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\golf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Mazda_CX3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\mazda_CX5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\optima.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\passat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Q3.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\RS5.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\S3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\S5.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\smart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\X3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\X7.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
