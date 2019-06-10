@@ -23,6 +23,7 @@ namespace single_2
     /// </summary>
     public partial class MainWindow : Window, INotifyPropertyChanged
     {
+
         public static ObservableCollection<CarInfo> Info;
         bool carNameSet = false;
         bool carYearSet = false;
@@ -34,20 +35,25 @@ namespace single_2
         int selectedPriceTo;
         String selectedFuel = "";
         public static ObservableCollection<CarInfo> compareList = new ObservableCollection<CarInfo>();
-
+        string srcVar = "C:/Users/ins_IT/Desktop/delete/ACS-2019/single_2/single_2/Images/1-37-512.png";
         public event PropertyChangedEventHandler PropertyChanged;
+
 
         public MainWindow()
         {
             InitializeComponent();
             remoMethod();
             Grd_carInfo.ItemsSource = Info;
-         }
+             Console.WriteLine("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+             Console.WriteLine(AppDomain.CurrentDomain.BaseDirectory);
+            Console.WriteLine("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+
+        }
 
         private void remoMethod()
         {
             var manInfo = new ObservableCollection<CarInfo>();
-            Info = Storage.ReadXml<ObservableCollection<CarInfo>>("Info.xml");
+            Info = Storage.ReadXml<ObservableCollection<CarInfo>>("allDataCarInfo.xml");
             Grd_carInfo.ItemsSource = Info;
             var manName = Info.Select(c => c.Manufacturer).Distinct();
             foreach (var item in manName)
@@ -198,6 +204,10 @@ namespace single_2
                 var res = Info;
                 res = new ObservableCollection<CarInfo>(Info.Where(car => car.Manufacturer == selectedBrand && car.Year == selectedYear && float.Parse(car.Price) >= selectedPriceFrom && float.Parse(car.Price) <= selectedPriceTo && car.Fuel == selectedFuel )); 
                 Grd_carInfo.ItemsSource = res;
+                if (res.Count == 0)
+                {
+                    MessageBox.Show("No match found");
+                }
             }
             else
             {

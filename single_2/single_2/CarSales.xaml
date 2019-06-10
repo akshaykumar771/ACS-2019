@@ -18,7 +18,7 @@
         </Grid.ColumnDefinitions>
         <StackPanel Orientation="Vertical" Margin="10,19,10,253" Grid.Row="1">
             <TextBlock TextWrapping="Wrap" Text="Year Of Manufacture" Margin="10,0,0,83" HorizontalAlignment="Left" Width="132" Height="27" FontSize="14"/>
-            <ComboBox x:Name="Cbx_Year" ToolTip="Please select the manufacture year of the car" HorizontalAlignment="Left" Margin="10,-80,0,0" VerticalAlignment="Top" Width="184" Height="42" SelectionChanged="Cbx_Year_SelectionChanged">
+            <ComboBox x:Name="Cbx_Year" ToolTip="Please select the manufacture year of the car" HorizontalAlignment="Left" Margin="12,-80,0,0" VerticalAlignment="Top" Width="184" Height="42" SelectionChanged="Cbx_Year_SelectionChanged">
                 <ComboBoxItem FontSize="12" FontWeight="Bold" Content="2015"/>
                 <ComboBoxItem FontSize="12" FontWeight="Bold" Content="2016"/>
                 <ComboBoxItem FontSize="12" FontWeight="Bold" Content="2017"/>

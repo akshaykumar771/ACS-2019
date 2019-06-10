@@ -10,7 +10,6 @@ namespace single_2
     {
         public string manufacturer { get; set; }
         public string year { get; set; }
-
         public float sold { get; set; }
     }
 }
