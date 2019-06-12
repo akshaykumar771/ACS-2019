@@ -50,6 +50,7 @@
 		<seats>5</seats>
 		<fuelTankCapacity>55</fuelTankCapacity>
 		<horsePower>320 hp</horsePower>
+		<carType>Sedan</carType>
 	</CarInfo>
 	<CarInfo>
 		<Manufacturer>AUDI</Manufacturer>
@@ -165,6 +166,7 @@
 		<seats>5</seats>
 		<fuelTankCapacity>66</fuelTankCapacity>
 		<horsePower>261hp</horsePower>
+		<carType>Sedan</carType>
 	</CarInfo>
 	<CarInfo>
 		<Manufacturer>BMW</Manufacturer>

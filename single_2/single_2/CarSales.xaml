@@ -6,34 +6,56 @@
         xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         xmlns:local="clr-namespace:single_2"
         mc:Ignorable="d"
-        Title="CarSales" Height="577.901" Width="800">
-    <Grid>
+        Title="Car Comparision and Sale Statistics" Height="553.901" Width="800">
+    <Grid Height="547" VerticalAlignment="Top">
         <Grid.RowDefinitions>
-            <RowDefinition Height="51*"/>
-            <RowDefinition Height="368*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="497*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="37*"/>
-            <ColumnDefinition Width="29*"/>
+            <ColumnDefinition Width="415*"/>
+            <ColumnDefinition Width="377*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel Orientation="Vertical" Margin="66,19,10,379" Grid.Row="1">
+        <StackPanel Orientation="Vertical" Margin="24,10,52,388" Grid.Row="1">
             <TextBlock TextWrapping="Wrap" Text="Year Of Manufacture" Margin="10,0,0,83" HorizontalAlignment="Left" Width="132" Height="27" FontSize="14"/>
-            <ComboBox x:Name="Cbx_Year" ToolTip="Please select the manufacture year of the car" HorizontalAlignment="Left" Margin="12,-80,0,0" VerticalAlignment="Top" Width="184" Height="42" SelectionChanged="Cbx_Year_SelectionChanged">
+            <ComboBox x:Name="Cbx_Year" ToolTip="Please select the manufacture year of the car" HorizontalAlignment="Left" Margin="12,-80,0,0" VerticalAlignment="Top" Width="184" Height="42" FontSize="16" SelectionChanged="Cbx_Year_SelectionChanged">
                 <ComboBoxItem FontSize="12" FontWeight="Bold" Content="2015"/>
                 <ComboBoxItem FontSize="12" FontWeight="Bold" Content="2016"/>
                 <ComboBoxItem FontSize="12" FontWeight="Bold" Content="2017"/>
                 <ComboBoxItem FontSize="12" FontWeight="Bold" Content="2018"/>
                 <ComboBoxItem FontSize="12" FontWeight="Bold" Content="2019"/>
             </ComboBox>
+
         </StackPanel>
-        <DataGrid Name="Grd_carSaleInfo" HorizontalAlignment="Left" Height="248" Margin="66,120,0,0" Grid.Row="1" VerticalAlignment="Top" Width="368" AutoGenerateColumns="False">
+        <DataGrid Name="Grd_carSaleInfo" HorizontalAlignment="Left" Height="248" Margin="24,119,0,0" Grid.Row="1" VerticalAlignment="Top" Width="368" AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Manf." Binding="{Binding manufacturer}" Width="*" IsReadOnly="True" />
-                <DataGridTextColumn Header="Year" Binding="{Binding year}" Width="*" IsReadOnly="True" />
-                <DataGridTextColumn Header="SoldCount" Binding="{Binding sold}" Width="*" IsReadOnly="True" />
+                <DataGridTextColumn Header="Manfacturer" Binding="{Binding manufacturer}" Width="*" IsReadOnly="True">
+               <DataGridTextColumn.HeaderStyle>
+               <Style TargetType="DataGridColumnHeader">
+               <Setter Property="HorizontalContentAlignment"
+                 Value="Center" />
+                </Style>
+                </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Year Of Manufacture" Binding="{Binding year}" Width="*" IsReadOnly="True">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment"
+                 Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="SoldCount" Binding="{Binding sold}"  Width="*" IsReadOnly="True">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment"
+                 Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <StackPanel Background="White" Grid.Column="1" HorizontalAlignment="Left" Height="406" Margin="31,19,0,0" Grid.Row="1" VerticalAlignment="Top" Width="307">
+        <StackPanel Background="White" HorizontalAlignment="Left" Height="406" Margin="1,19,0,0" Grid.Row="1" VerticalAlignment="Top" Width="363" Grid.Column="1">
             <lvc:CartesianChart Series="{Binding SeriesCollection}" LegendLocation="Left" Height="385">
                 <lvc:CartesianChart.AxisX>
                     <lvc:Axis Title="Year Of Manufacture" Labels="{Binding Labels}"/>
@@ -43,8 +65,8 @@
                 </lvc:CartesianChart.AxisY>
             </lvc:CartesianChart>
         </StackPanel>
-        <TextBlock HorizontalAlignment="Left" Margin="79,10,0,0" TextWrapping="Wrap" Text="Car Sales" FontSize="25" VerticalAlignment="Top" Height="30" Width="184"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="34" Margin="66,10,0,0" VerticalAlignment="Top" Width="699" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="24,6,0,0" TextWrapping="Wrap" FontSize="25" VerticalAlignment="Top" Height="30" Width="217"><Run Text="Car Sales"/><Run Text=" Statistics"/></TextBlock>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="24,403,0,0" Grid.Row="1" VerticalAlignment="Top" Width="90" Height="34" Click="Button_CarDetails_Click" Background="#FF3D3D3D" Foreground="White"/>
 
     </Grid>
 </Window>

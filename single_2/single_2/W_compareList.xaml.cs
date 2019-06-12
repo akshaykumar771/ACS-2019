@@ -20,23 +20,32 @@ namespace single_2
     /// </summary>
     public partial class W_compareList : Window
     {
-        
-        public W_compareList()
+       public W_compareList()
         {
             InitializeComponent();
             Grd_cmpTable.ItemsSource = MainWindow.compareList;
-            //src = new BitmapImage(new Uri("A_Class.jpg", UriKind.Relative));
-            
         }
 
+        //Back Button
         private void Button_Back_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mw = new MainWindow();
-            mw.Owner = this;
-            mw.Show();
+            MainWindow mw;
+            Owner.Show();
             Visibility = Visibility.Hidden;
         }
 
-       
+        //Remove Button
+        private void Button_Remove_Click(object sender, RoutedEventArgs e)
+        {
+            if (Grd_cmpTable.SelectedItem != null)
+            {
+                MainWindow.compareList.Remove((CarInfo)Grd_cmpTable.SelectedItem);
+                --MainWindow.count;
+            }
+            else
+            {
+                MessageBox.Show("Please select a car to remove from the screen","Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
     }
 }

@@ -29,26 +29,25 @@ namespace single_2
         bool carYearSet = false;
         bool carPriceSet = false;
         bool carFuelSet = false;
-        bool carManualSet = false;
-        bool carAutoSet = false;
         String selectedBrand = "";
         String selectedYear = "";
         int selectedPriceFrom;
         int selectedPriceTo;
         String selectedFuel = "";
         public static ObservableCollection<CarInfo> compareList = new ObservableCollection<CarInfo>();
-        //string srcVar = "C:/Users/ins_IT/Desktop/delete/ACS-2019/single_2/single_2/Images/1-37-512.png";
         public event PropertyChangedEventHandler PropertyChanged;
-
+        public static W_compareList cmp;
+        public static int count = 0;
 
         public MainWindow()
         {
             InitializeComponent();
-            remoMethod();
+            readXmlMethod();
             Grd_carInfo.ItemsSource = Info;
         }
 
-        private void remoMethod()
+        //Read XML file 
+        private void readXmlMethod()
         {
             var manInfo = new ObservableCollection<CarInfo>();
             Info = Storage.ReadXml<ObservableCollection<CarInfo>>("allDataCarInfo.xml");
@@ -60,6 +59,7 @@ namespace single_2
             }
         }
 
+        //Select Manufacturer
         private void Cbx_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             this.carNameSet = true;
@@ -70,6 +70,7 @@ namespace single_2
             }
          }
 
+        //Select Year
         private void Cbx_year_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (Cbx_Cb_Year.SelectedItem != null)
@@ -99,6 +100,8 @@ namespace single_2
                 }
             }
         }
+
+        //Select Price Range
         private void Cbx_Cb_Price_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (Cbx_Cb_Price.SelectedValue != null)
@@ -130,6 +133,8 @@ namespace single_2
                 }
             }
         }
+
+        //Select Fuel Type
         private void Cbx_Cb_Fuel_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (Cbx_Cb_Fuel.SelectedValue != null)
@@ -154,20 +159,22 @@ namespace single_2
             }
         }
 
+        //Add to Compare List
         private void Btn_addCompare_Click(object sender, RoutedEventArgs e)
         {
+            
             if (Grd_carInfo.SelectedItem == null)
             {
-                MessageBox.Show("Please select a car to add to the list!!");
+                MessageBox.Show("Please select a car to add to the list!!","Information", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             else
             {
-                if (compareList.Count<=2)
+                if (compareList.Count<3)
                 {
                     CarInfo carInfo = (CarInfo)Grd_carInfo.SelectedItem;
                     if (compareList.Contains(carInfo))
                     {
-                        MessageBox.Show("Already added to the list!!");
+                        MessageBox.Show("Already added to the list!!","Error", MessageBoxButton.OK, MessageBoxImage.Error);
                     }
                     else
                     {
@@ -176,29 +183,37 @@ namespace single_2
                 }
                 else
                 {
-                    MessageBox.Show("You can only compare 3 items at once.");
+                    MessageBox.Show("You can only compare 3 items at once.","Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
                 }
 
             }
+           if (count >= 0 && count < 3)
+            {
+                var c = ++MainWindow.count;
+                Tbk_cmpCount.Text = "No. of selected cars: " + c;
+            }
         }
 
+        //Go to Compare Window
         private void Btn_gotoCompare_Click(object sender, RoutedEventArgs e)
         {
-            W_compareList cmp = new W_compareList();
+            cmp = new W_compareList();
             cmp.Owner = this;
             cmp.Show();
             Visibility = Visibility.Hidden;
         }
 
+        //Go to Sales window
         private void Button_Sales_Click(object sender, RoutedEventArgs e)
         {
             CarSales cs = new CarSales();
             cs.Owner = this;
             cs.Show();
             Visibility = Visibility.Hidden;
-           
+
         }
 
+        //Display datagrid based on input values
         private void Btn_Go_Click(object sender, RoutedEventArgs e)
         {
             bool isdataset = (carNameSet && carYearSet && carPriceSet && carFuelSet );
@@ -221,6 +236,10 @@ namespace single_2
                 {
                     res = new ObservableCollection<CarInfo>(Info.Where(car => car.Manufacturer == selectedBrand && car.Year == selectedYear && float.Parse(car.Price) >= selectedPriceFrom && float.Parse(car.Price) <= selectedPriceTo && car.Fuel == selectedFuel)); 
                 }
+                else if(TypeA && TypeM == true)
+                {
+                    res = new ObservableCollection<CarInfo>(Info.Where(car => car.Manufacturer == selectedBrand && car.Year == selectedYear && float.Parse(car.Price) >= selectedPriceFrom && float.Parse(car.Price) <= selectedPriceTo && car.Fuel == selectedFuel));
+                }
                 else
                 {
                     res = new ObservableCollection<CarInfo>(Info.Where(car => car.Manufacturer == selectedBrand && car.Year == selectedYear && float.Parse(car.Price) >= selectedPriceFrom && float.Parse(car.Price) <= selectedPriceTo && car.Fuel == selectedFuel && car.Type == carTypeString));
@@ -228,27 +247,31 @@ namespace single_2
                 Grd_carInfo.ItemsSource = res;
                 if (res.Count == 0)
                 {
-                    MessageBox.Show("No match found");
-                   
-                }
+                     MessageBox.Show("No Match Found!!Please Clear and make your choice again","Information", MessageBoxButton.OK, MessageBoxImage.Information);
+                 }
             }
             else
             {
-                MessageBox.Show("Please select all the options and then proceed");
+                MessageBox.Show("Please select all the options and then proceed","Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
 
+        //CLear all Inputs
         private void Btn_Clear_Click(object sender, RoutedEventArgs e)
         {
             Cbx_Cb.SelectedIndex = -1;
             Cbx_Cb_Fuel.SelectedIndex = -1;
             Cbx_Cb_Price.SelectedIndex = -1;
             Cbx_Cb_Year.SelectedIndex = -1;
+            
             Grd_carInfo.ItemsSource = Info;
             carNameSet = false;
             carYearSet = false;
             carPriceSet = false;
             carFuelSet = false;
+            Chbx_manual.IsChecked = false;
+            Chbx_auto.IsChecked = false;
+
         }
     }
 }

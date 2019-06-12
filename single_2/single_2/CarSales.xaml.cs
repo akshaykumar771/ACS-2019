@@ -31,7 +31,7 @@ namespace single_2
         public static ObservableCollection<CarSale> carSales = new ObservableCollection<CarSale>();
         public string[] Labels { get; set; }
         public Func<double, string> Formatter { get; set; }
-        //public SeriesCollection SeriesCollection { get; set; }
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         public SeriesCollection _SeriesCollection;
@@ -55,13 +55,10 @@ namespace single_2
         public CarSales()
         {
             InitializeComponent();
-            // removeMethod();
             carSales = Storage.ReadXml<ObservableCollection<CarSale>>("salesInfo.xml");
-            //Grd_carSaleInfo.ItemsSource = carSales;
-
-            //plotGraph(10, 10 ,10, 10, 10, 10, 10, 10, "2018");
         }
 
+        //Plotting of Graph
         private void plotGraph(float audi, float benz, float bmw, float vw, float kia, float lr, float smart, float mazda, string year)
         {
             SeriesCollection = new SeriesCollection
@@ -109,22 +106,15 @@ namespace single_2
                 Values = new ChartValues<double> { mazda }
             });
 
-            //also adding values updates and animates the chart automatically
-            //SeriesCollection[1].Values.Add(2d);
-
             Labels = new[] { year };
             Formatter = value => value.ToString("N");
-
             DataContext = this;
         }
 
-        
-        
-
+        //Manufactured Year Filter
         private void Cbx_Year_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             this.carYearSet = true;
-           // Grd_carSaleInfo.ItemsSource = SalesInfo;
             var cbxYear = Cbx_Year.SelectedValue.ToString();
 
             switch (cbxYear)
@@ -141,31 +131,29 @@ namespace single_2
                 case "System.Windows.Controls.ComboBoxItem: 2018":
                     selectedYear = "2018";
                     break;
-                case "System.Windows.Controls.ComboBoxItem: 2019":
-                    selectedYear = "2019";
-                    break;
             }
-            Console.WriteLine(selectedYear);
             if (this.carYearSet == true)
             {
                 ArrayList a1 = new ArrayList();
                 var res = carSales.Where(car => car.year == selectedYear);
                 Grd_carSaleInfo.ItemsSource = res;
                
-                
                     var resGraph = from car in carSales where car.year.Equals(selectedYear) select car.sold;
                     foreach (var cnt in resGraph)
                     {
                         a1.Add(cnt);
                     }
 
-                    plotGraph((float)a1[0], (float)a1[1], (float)a1[2], (float)a1[3], (float)a1[4], (float)a1[5], (float)a1[6], (float)a1[7], "Year");
-                
+                    plotGraph((float)a1[0], (float)a1[1], (float)a1[2], (float)a1[3], (float)a1[4], (float)a1[5], (float)a1[6], (float)a1[7], selectedYear);
             }
-            //else
-            //{
-            //    MessageBox.Show("abc");
-            //}
+        }
+
+        //Navigate to Car Details Screen
+        private void Button_CarDetails_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mw; 
+            Owner.Show();
+            Visibility = Visibility.Hidden;
         }
     }
 }
